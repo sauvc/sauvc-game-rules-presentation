@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SAUVC17 Games Rules and Regulations</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css">
+		<link rel="stylesheet" href="css/tweak.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="title" data-background-image="img/sauvc.jpg">
+					<h1 style="color:#D63232"> SAUVC 2017 </h1>
+					<h3 style="color:#D63232"> Game rules and regulations </h3>
+				</section>
+
+				<section>
+					<h3> Safety </h3>
+					<ul>
+						<li>AUVs should <strong>not leak</strong> and pollute the pool.</li>
+						<li>AUVs must have a bright yellow <strong>kill switch</strong> that turns off the vehicle.</li>
+					</ul>
+					<img class="killswitch" src="img/killswitch.jpg" alt="killswitch">
+				</section>
+
+				<section data-markdown>
+					### Game Sequence
+					1. AUVs will undergo weight and size check. Bonus points, if applicable, will be awarded.
+					- AUVs will be tested for battery, oil or lubricant leak. Failing the leak test would lead to disqualification of team.
+					- AUVs will proceed to qualifying round. The bonus points for size and weight is applicable only if the AUV passes the qualifying round.
+					- The qualified AUVs will proceed for the final rounds of competition.
+				</section>
+
+				<section data-markdown>
+					### Qualification Round
+					- AUVs have to pass a qualifying round before they can participate in the main arena.
+					- To qualify an AUV has to swim **10 meters** and **without surfacing or touching the bottom/wall**.
+					- The qualifier round timing decides the sequence for final round of the competition.
+				</section>
+
+				<section>
+					<h3>The Arena</h3>
+					<img class="arena" src="img/arena.jpg" alt="arena">
+				</section>
+
+				<section data-markdown>
+					### Starting Zone
+					- The teams  **must** start their AUVs from the starting zone which is a 140×140cm area marked on the surface of water.
+					- The team may only place the AUV at the water surface, it must **autonomously submerge before** leaving the starting zone.
+				</section>
+
+				<section>
+					<h3>Starting Zone</h3>
+					<img class="arena" src="img/start.jpg" alt="start">
+				</section>
+
+				<section>
+					<h1>Tasks</h1>
+					<ul>
+						<li> Navigation (Gate)</li>
+						<li> Target Acquisition (Ball Drop)</li>
+						<li> Target Reacquisition (Ball pickup)</li>
+						<li> Localization (Flare)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h3> Navigation (Gate) </h3>
+					<img class="arena" src="img/gate.jpg" alt="gate">
+				</section>
+
+				<section data-markdown>
+					### Navigation (Gate)
+					- The aim of the this task is to swim through a gate in water.
+					- There is a penalty for **touching the gate**.
+				</section>
+
+				<section>
+					<h3> Target Acquisition (Ball Drop) </h3>
+					<img class="arena" src="img/drop.jpg" alt="drop">
+				</section>
+
+				<section data-markdown>
+					### Target Acquisition (Ball Drop)
+					- The aim of the task is drop a ball into one of the drums at the bottom of the pool.
+					- Drop the ball in the Blue drum.  **[30 Points]**
+					- Drop the ball in the Red drum with the pinger (45kHz).  **[50 Points]**
+					- Dropping the ball in any other Red drum.  **[10 Points]**
+					- The location of the pinger **may be changed** in between retries.
+				</section>
+
+				<section>
+					<h3> Target Reacquisition (Ball pickup) </h3>
+					<img class="arena" src="img/pickup.jpg" alt="pickup">
+				</section>
+
+				<section data-markdown>
+					### Target Reacquisition (Ball Drop)
+					- The aim of the task is pick a ball from the drum you dropped it into.
+					- This task is only attemptable if the Target Acquisition has been successfully completed
+					- AUV has to leave the target zone (green mat), before it can attempt the Target Reacquisition task
+					- AUV has to hold on to the ball till the end of the attempt
+				</section>
+
+				<section>
+					<h3> Target Reacquisition (Ball pickup) </h3>
+					<img class="arena" src="img/arena_drop_pickup.jpg" alt="pickup">
+				</section>
+
+				<section>
+					<h3> Localization (Flare) </h3>
+					<img class="arena" src="img/flare.jpg" alt="flare">
+				</section>
+
+				<section data-markdown>
+					### Localization (Flare)
+					- Bump the flare causing the golf ball in the flare to drop out
+					- The flare is marked with an acoustic pinger (37.5kHz).
+					- This flare could be located **anywhere** within the main arena.
+				</section>
+
+				<section data-markdown>
+					### Surfacing
+					- If the AUV surfaces any **any time** during the mission, the current attempt comes to an **end**.
+				</section>
+
+				<section data-markdown>
+					### Timing Bonus
+					- as long as the AUV has successfully completed the Navigation task, bonus points proportional to the remaining time.
+					<br>
+					`Bonus points = (900 - RUN_TIME) • 0.03`
+				</section>
+
+				<section data-markdown>
+					### Penalties
+					|    | Description | Penalty Points |
+					| -- | ----------- | -------------- |
+					| 1  | Touching the gate | 2 |
+					| 2  | AUV touches the bottom of the pool or wall for `t` secs| 5 + max(0,4•(t-10)) |
+				</section>
+
+				<section data-markdown>
+					### Game Procedure
+					- 5 Minutes Setup time + 15 Minutes Run time (including ALL retries).
+					- Retry attempt can be made only after the judge’s permission.
+					- Retry would mean that the AUV starts from the start zone with 0 points.
+					- Attempt with the highest score (including retries) will be considered for final scoring.
+					- Once your team passes the qualification round, you can register for main arena slots with the _Slot Master_.
+				</section>
+
+				<section data-markdown>
+					### Diver Communication
+					- _Game Master_ will help you relay messages to the divers.
+					- Tell the _Game Master_ **clearly** if you want your AUV stopped and retreived by divers.
+				</section>
+
+				<section>
+					<h3>House Rules</h3>
+					<ul>
+						<li>You <strong>have to sign and return</strong> the Indemnity Form before you're can enter ANY of the pools.</li>
+						<li>NO team member should enter the main pool.</li>
+						<li><strong>No footware (shoes, slippers, etc)</strong> near the pool.</li>
+						<li>All teammembers near the pool <strong>MUST wear lifejackets</strong>.</li>
+					</ul>
+					<div>
+					<img class="footware" src="img/no_diving.jpg" alt="diving">
+					<img class="footware" src="img/no_footware.jpg" alt="footware">
+					<img class="footware" src="img/lifejacket.png" alt="lifejacket">
+					</div>
+
+				</section>
+
+				<section>
+					<h3>House Rules</h3>
+					<ul>
+						<li>The judges may suspend the challenge if weather turns unfavorable.</li>
+						<li>The pool area must be evacuated in case of lightning.</li>
+					</ul>
+					<img class="arena" src="img/rain.jpg" alt="rain">
+				</section>
+
+				<section>
+					<h3> Technical Presentation </h3>
+					<ul>
+						<li>10 minutes presentation on design and engineering process of AUV on Monday.</li>
+						<li>The presentation will be judged and teams will get up to <strong>15 points</strong>.</li>
+						<li>Share, learn and make friends!</li>
+					</ul>
+					<img class="talks" src="img/talks.jpg" alt="talk">
+				</section>
+
+				<section data-markdown>
+					### Announcements
+					-
+				</section>
+
+				<section>
+					<h1> Good luck, Have fun! </h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				progress: false,
+				controls: false,
+				overview: false,
+				transition: 'none',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
