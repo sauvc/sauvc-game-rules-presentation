@@ -1,0 +1,19 @@
+.columns{
+	display: flex;
+	justify-content: unset;
+	align-items: center;
+}
+
+.reveal li {
+	margin-bottom: 0.8em;
+}
+
+
+.reveal section img.spare-props{
+	margin-top: 0;
+}
+
+
+.reveal section img.task-img{
+	max-width: 75%;
+}
